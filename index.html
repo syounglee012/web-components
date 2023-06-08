@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Web Components Example</title>
-    </head>
+
+</head>
+
 <body>
     <h1>Web Components Example</h1>
-    <my-component></my-component>
-    <script src="my-component.js"></script>
+    <my-component name="Sam Lee" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+        <div slot="email">syounglee012@gmail.com</div>
+
+        <div slot="phone">012-123-0988</div>
+    </my-component>
+
+    <my-component name="Grace Lee" avatar="https://randomuser.me/api/portraits/women/1.jpg">
+        <div slot="email">gkwon@gmail.com</div>
+
+        <div slot="phone">012-123-0988</div>
+
+
+    </my-component>
+    <script src="myComponent.js"></script>
 </body>
 
 
-    </html>
+</html>
